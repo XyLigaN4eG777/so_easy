@@ -1,10 +1,11 @@
 #include "easy_list.h"
 
-int itc_positive_list(const vector <int> &mass){
-    int kol = 0;
-    for (int i = 0; i < mass.size(); i ++){
-        if (mass[i] > 0)
-             kol ++;
+int itc_positive_list(const vector <int> &myvector){
+    int a;
+    a = 0;
+    for (int i = 0; i < myvector.size(); i = i + 1){
+        if (myvector[i] > 0)
+             a = a + 1;
     }
-    return kol;
+    return a;
 }
