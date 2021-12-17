@@ -5,7 +5,7 @@
 
 using namespace std;
 void itc_even_index_list (const vector <int> &myvector, vector <int> &myvector2);
-void itc_even_parts_list(const vector <int> &myvector, vector <int> &myvector);
+void itc_even_parts_list(const vector <int> &myvector, vector <int> &myvector2);
 int itc_positive_list(const vector <int> &myvector);
 int itc_sl_list(const vector <int> &myvector);
 bool itc_same_parts_list(const vector <int> &myvector);
