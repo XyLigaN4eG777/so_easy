@@ -1,11 +1,14 @@
 #include "easy_list.h"
 
-void itc_rev_list(vector <int> &myvector){
-    int a;
-    a = 0;
-    for (int i = 0 ; i <= (myvector.size() / 2); i = i + 1){
-        a = myvector[i];
-        myvector[i] = myvector[(myvector.size() - 1) - i];
-        myvector[(myvector.size() - 1) - i] = a;
+void itc_rev_list(vector <int> &mass){
+    int c = mass.size();
+    int b; 
+    int a = c - 1;
+    if(c != 0){
+        for(int i = 0; i < c / 2; i = i + 1){
+            b = mass[i];
+            mass[i] = mass[a - i];
+            mass[a - i] = b;
+        }
     }
 }
