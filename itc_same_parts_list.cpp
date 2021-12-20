@@ -1,10 +1,14 @@
 #include "easy_list.h"
 
-bool itc_same_parts_list(const vector <int> &myvector){
-    for (int i = 1; i < myvector.size(); i = i + 1){
-        if (((myvector[i] < 0) && (myvector[i - 1] < 0)) || ((myvector[i] >= 0) && (myvector[i - 1] >= 0)))
-             return true;
+int itc_sl_list(const vector <int> &mass){
+    int c = mass.size();
+    int a = 0;
+    if(c != 0){
+        for(int i = 0; i < c - 1; i++){
+            if(mass[i + 1] > mass[i]){
+                a = a + 1;
+            }
+        }
     }
-    return false;
+    return a;
 }
-
