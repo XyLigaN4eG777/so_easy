@@ -8,6 +8,6 @@ void itc_rshift_list(vector <int> &mass){
             mass[i] = mass2[i - 1];
             mass[i + 1] = mass2[i];
         }
-        mass[0] = mass2[count - 1];
+        mass[0] = mass2[c - 1];
     }
 }
