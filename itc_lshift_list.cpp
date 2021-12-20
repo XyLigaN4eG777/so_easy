@@ -1,10 +1,13 @@
 #include "easy_list.h"
 
-void itc_lshift_list(vector <int> &myvector){
-    int a;
-    a = myvector[0];
-    for (int i = 1; i < myvector.size(); i = i + 1){
-        myvector[i - 1] = myvector[i];
+void itc_lshift(vector <int> &mass){
+    int c = mass.size();
+    vector<int> mass2 = mass;
+    if(c != 0){
+        for(int i = c - 2; i >= 0; i = i - 2){
+            mass[i] = mass2[i + 1];
+            mass[i - 1] = mass2[i];
+        }
+        mass[c - 1] = mass2[0];
     }
-    myvector[myvector.size() - 1] = a;
 }
